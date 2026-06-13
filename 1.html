@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typo Portfolio Video</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/png" href="Level.png">
+</head>
+<body>
+
+    <div class="background-blur"></div>
+
+    <div class="video-container">
+        <div class="video-wrapper">
+            <video id="portfolio-video">
+                <source src="full video/intro to client.mp4" type="video/mp4">
+            </video>
+            
+            <div class="play-pause-overlay" id="play-pause-btn">
+                <div class="icon-container">
+                    <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-btn">
+            ← Get Back To Site
+        </a>
+    </div>
+
+    <script>
+        const video = document.getElementById('portfolio-video');
+        const playPauseBtn = document.getElementById('play-pause-btn');
+        const playIcon = playPauseBtn.querySelector('.play-icon');
+        const pauseIcon = playPauseBtn.querySelector('.pause-icon');
+
+        function updateIcon() {
+            if (video.paused) {
+                playIcon.style.display = 'block';
+                pauseIcon.style.display = 'none';
+                playPauseBtn.style.opacity = '1';
+            } else {
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'block';
+                playPauseBtn.style.opacity = '0';
+            }
+        }
+
+        playPauseBtn.addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+            updateIcon();
+        });
+
+        video.addEventListener('click', () => {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+            updateIcon();
+        });
+
+        video.addEventListener('play', updateIcon);
+        video.addEventListener('pause', updateIcon);
+        video.addEventListener('ended', updateIcon);
+
+        // Initialize
+        updateIcon();
+    </script>
+
+</body>
+</html>

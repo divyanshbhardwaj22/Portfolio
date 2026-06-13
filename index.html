@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="Level.png">
+    <title>IAN | Video Editor & Motion Designer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Background -->
+    <div class="bg-anime"></div>
+    <div class="bg-overlay"></div>
+    <div class="noise"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">DB.</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#consistent">Consistent</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1536240478700-b869070f9279?w=1920">
+                <source src="showcase/showcase.mp4" type="video/mp4">
+            </video>
+            <a href="main.html" target="_blank" class="video-overlay">
+                <div class="play-icon">
+                    <i class="fas fa-external-link-alt"></i>
+                </div>
+            </a>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Video Editor & Motion Designer</div>
+            <h1>Creating <span>Scroll-Stopping</span> Edits & Motion Graphics</h1>
+            <p> Created a portfolio video in After Effects using speed ramping, color correction, flat animations, engaging YouTube and Shorts hooks, and dynamic typography, attention-grabbing content designed to maximize viewer retention and audience engagement.</p>
+            <!--<div class="hero-stats">
+                
+                <div class="stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Projects Done</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">1+</div>
+                    <div class="stat-label">Years Exp.</div>
+                </div>
+            </div>
+            -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about">
+            <div class="about-text">
+                <p>Hi, I'm Divyansh.</p>
+                <p>I'm a Video Editor specializing in Premiere Pro and After Effects. I completed a 3-month internship about a year ago and have since worked on client projects, including for <a href="https://www.youtube.com/@thegtaassassin63" class = "heros" target="_blank">GTA Assassin.</a></p>
+                <p>Whether it's social media content, cinematic edits, or motion graphics, I create engaging videos designed to hold viewers' attention.</p>
+                <p>also built a US-focused YouTube channel, improving my editing, storytelling, and audience understanding.</p>
+            </div>
+            <div class="about-image">
+                <img src="Untitled design.png" alt="Divyansh Bhardwaj">
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-wrapper">
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project 1 - Landscape -->
+                <div class="project-card">
+                    <video autoplay muted loop playsinline>
+                        <source src="showcase/1 showcase.mp4" type="video/mp4">
+                    </video>
+                    <a href="1.html" target="_blank" class="video-overlay">
+                        <div class="play-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                    <div class="project-info">
+                        <h3>Typo Portfolio Video</h3>
+                        <p>Clean editing, dynamic typography, strong hooks, and engaging motion</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 - Portrait -->
+                <div class="project-card">
+                    <video autoplay muted loop playsinline>
+                        <source src="showcase/2nd showcase.mp4" type="video/mp4">
+                    </video>
+                    <a href="https://www.youtube.com/@gtabuzzx/shorts" target="_blank" class="video-overlay">
+                        
+                    </a>
+                    <div class="project-info">
+                        <h3>US Audience YouTube Project</h3>
+                        <p>Built a US-focused channel using audience research, no VPN.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Portrait -->
+                <div class="project-card">
+                    <video autoplay muted loop playsinline>
+                        <source src="showcase/3 showcase.mp4" type="video/mp4">
+                    </video>
+                    <a href="3.html" target="_blank" class="video-overlay">
+                        <div class="play-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                    <div class="project-info">
+                        <h3>Cherry Cricket Burger Shop Edit</h3>
+                        <p>Created a fast-paced promotional edit showcasing burgers with dynamic motion.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 - Portrait -->
+                <div class="project-card">
+                    <video autoplay muted loop playsinline>
+                        <source src="showcase/6th showcase.mp4" type="video/mp4">
+                    </video>
+                    <a href="4.html" target="_blank" class="video-overlay">
+                        <div class="play-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                    <div class="project-info">
+                        <h3>Podcast Short Edit</h3>
+                        <p>Edited a podcast short for Winter Media Agency with engaging visuals.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5 - Portrait -->
+                <div class="project-card">
+                    <video autoplay muted loop playsinline>
+                        <source src="showcase/5th showcase.mp4" type="video/mp4">
+                    </video>
+                    <a href="5.html" target="_blank" class="video-overlay">
+                        <div class="play-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                    <div class="project-info">
+                        <h3>Concept Coffee Brand Advertisement</h3>
+                        <p>Created a cinematic coffee ad focused on coffee.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6 - Landscape -->
+                <div class="project-card">
+                    <video autoplay muted loop playsinline>
+                        <source src="showcase/4 showcase .mp4" type="video/mp4">
+                    </video>
+                    <a href="6.html" target="_blank" class="video-overlay">
+                        <div class="play-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                    <div class="project-info">
+                        <h3>Udemy Marketing Animation</h3>
+                        <p>Animated flat illustrations into engaging motion graphics for Udemy marketing.</p>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="pagination">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button><i class="fas fa-chevron-right"></i></button>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Consistent Section -->
+    <section id="consistent">
+        <h2 class="section-title">Consistency</h2>
+        <div class="consistent">
+            <div class="consistent-text">
+                Built and managed a US-focused YouTube channel for 2 months without using a VPN, consistently creating and editing content to understand audience behavior, improve storytelling, and strengthen video editing skills.
+            </div>
+            <div class="consistent-image">
+                <img src="showcase/Screenshot 2026-06-10 170853.png" alt="YouTube Channel Analytics">
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2 class="section-title">Resume</h2>
+        <div class="resume">
+            <div class="pdf-container">
+                <div class="pdf-preview">
+                    <i class="fas fa-file-pdf"></i>
+                    <p>Resume Preview</p>
+                </div>
+                <div class="pdf-actions">
+                    <a href="1. Divyansh DM.pdf" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-eye"></i> Open Resume
+                    </a>
+                    <a href="1. Divyansh DM.pdf" download class="btn btn-secondary">
+                        <i class="fas fa-download"></i> Download PDF
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact">
+            <div class="contact-box">
+                <h3>Let's Connect</h3>
+                <p class="subtitle">Motion Graphics & Video Editor creating engaging content — let's talk!</p>
+                <p style="color: var(--gray); margin-bottom: 25px; font-size: 1.05rem;">Get in Touch</p>
+                <a href="mailto:divyanshbhardwaj2273@gmail.com" class="email-link">
+                    <i class="fas fa-envelope"></i>
+                    divyanshbhardwaj2273@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© Copyright IAN (Divyansh Bhardwaj) All Rights Reserved</p>
+        <p class="designer">Designed by IAN (Divyansh Bhardwaj)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
